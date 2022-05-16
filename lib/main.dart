@@ -16,21 +16,21 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Weather App'),
+      home: const WeatherPage(title: 'Weather App'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class WeatherPage extends StatefulWidget {
+  const WeatherPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<WeatherPage> createState() => _WeatherPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _WeatherPageState extends State<WeatherPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
